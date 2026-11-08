@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": true,
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "sourceRevision": "96beba1c56a532998487e8aa01e7c6a7f59a4f994ef17559353490f12494e55e",
+  "evidence": [
+    "Source-backed provider setup metadata",
+    "Offline configuration and MCP protocol tests"
+  ],
+  "provenance": [
+    "https://help.withallo.com/openapi.json"
+  ],
+  "id": "allo-mcp",
+  "kind": "mcp-setup",
+  "product": "pipmcp",
+  "title": "Allo MCP setup and connection checker",
+  "description": "Generate Allo MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "operationIds": [],
+  "appSlug": "allo",
+  "appName": "Allo",
+  "providerDocs": "https://help.withallo.com/openapi.json",
+  "providerWebsite": "https://www.withallo.com/",
+  "authentication": {
+    "type": "api_key_header",
+    "requiredCredentialFields": [
+      "api_key"
+    ],
+    "requiredHeaderNames": [],
+    "helpUrl": "https://help.withallo.com/en/api-reference/introduction",
+    "tenantRequired": false,
+    "accountParameterNames": []
+  },
+  "attributionSlug": "github-allo-mcp",
+  "factory": "leadadapter-pipmcp",
+  "generatorVersion": 1
+}
