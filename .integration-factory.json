@@ -1,39 +1,62 @@
 {
   "schemaVersion": 1,
-  "status": "ready",
-  "verification": "mock-only",
-  "releaseEligible": true,
-  "maintainer": "jannikco",
-  "license": "MIT",
-  "sourceRevision": "96beba1c56a532998487e8aa01e7c6a7f59a4f994ef17559353490f12494e55e",
-  "evidence": [
-    "Source-backed provider setup metadata",
-    "Offline configuration and MCP protocol tests"
-  ],
-  "provenance": [
-    "https://help.withallo.com/openapi.json"
-  ],
   "id": "allo-mcp",
   "kind": "mcp-setup",
   "product": "pipmcp",
   "title": "Allo MCP setup and connection checker",
-  "description": "Generate Allo MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "description": "Prepare Allo for AI workflows with a PipMCP setup doctor, authenticated discovery and coding-agent instructions.",
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": false,
   "operationIds": [],
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "attributionSlug": "github-allo-mcp",
+  "sourceRevision": "a8e716512e5934e1b7ae8e67f8b858024f22b9c3464b081fd3f0836b15c07340",
+  "qualityVersion": 2,
+  "artifactType": "setup",
+  "evidence": [
+    "Gateway HTTP transport fixtures",
+    "Generated stdio wrapper discovery/call fixtures"
+  ],
+  "provenance": [
+    "https://help.withallo.com/openapi.json"
+  ],
+  "utility": {
+    "problem": "Prepare Allo and inspect your hosted setup",
+    "output": "Offline setup plan and authenticated discovery diagnostics"
+  },
   "appSlug": "allo",
   "appName": "Allo",
-  "providerDocs": "https://help.withallo.com/openapi.json",
-  "providerWebsite": "https://www.withallo.com/",
-  "authentication": {
-    "type": "api_key_header",
-    "requiredCredentialFields": [
-      "api_key"
-    ],
-    "requiredHeaderNames": [],
-    "helpUrl": "https://help.withallo.com/en/api-reference/introduction",
-    "tenantRequired": false,
-    "accountParameterNames": []
+  "maintenanceOnly": true,
+  "executionAuthority": "pipmcp-gateway",
+  "version": "1.0.0",
+  "agentReady": true,
+  "capabilityEvidence": {
+    "local": {
+      "level": "Tested",
+      "operations": [
+        {
+          "name": "gateway_transport",
+          "level": "Tested",
+          "method": "contract-fixture",
+          "evidenceRefs": [
+            "Generated gateway/stdio fixtures"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "Generated gateway/stdio fixtures"
+      ],
+      "mode": "local"
+    },
+    "managed": {
+      "level": "Documented",
+      "operations": [],
+      "evidenceRefs": [],
+      "mode": "managed"
+    }
   },
-  "attributionSlug": "github-allo-mcp",
   "factory": "leadadapter-pipmcp",
-  "generatorVersion": 1
+  "generatorVersion": 3
 }

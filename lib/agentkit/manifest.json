@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "product": "pipmcp",
+  "credential": "PIPMCP_API_KEY",
+  "skills": [
+    {
+      "name": "pipmcp-allo",
+      "description": "Connect AI agents to Allo using one PipMCP API key and actual hosted tool discovery."
+    }
+  ],
+  "files": {
+    "skills/pipmcp-allo/SKILL.md": "b6ab9e234019988279b301153737aa6ae4f86cf1a622abca1364ce39c464074e"
+  }
+}
